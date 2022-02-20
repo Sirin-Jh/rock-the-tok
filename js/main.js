@@ -1,6 +1,3 @@
-// ==== wow ====
-new WOW().init();
-
 // ==== scroll ====
 window.onload = () => {
   const Slider = function(pages) {

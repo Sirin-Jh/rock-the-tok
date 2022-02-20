@@ -50,6 +50,7 @@
 	}
 	.second.page h1 {
 		font-size: 50px;
+		margin-bottom: 50px;
 	}
 	.second.page ul {
 		font-size: 24px;
@@ -94,27 +95,38 @@
 		height: 300px;
 	}
 	.banner-wrap .round {
-		width: 530px;
+		width: 460px;
 	}
 	.banner-wrap .top-icons .image-1 {
 		width: 48px;
+		top: -20px;
 	}
 	.banner-wrap .top-icons .image-2 {
 		width: 37px;
+		left: -30px;
+		top: -24px;
 	}
 	.banner-wrap .top-icons .image-3 {
-		width: 104px;
+		width: 90px;
 	}
 	.banner-wrap .top-icons .image-4 {
-		width: 92px;
+		width: 82px;
+		top: -25px !important;
 	}
 	.banner-wrap .top-icons .image-5 {
 		width: 44px;
+		top: -20px !important;
 	}
 	.banner-wrap {
-		width: 760px;
+		width: 750px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		bottom: -40px;
 	}
 	.banner-wrap img.left {
+		padding-top: 40px;
+		padding-bottom: 40px;	
+		top: -82px;
     	width: 215px;
 	}
 	.banner-wrap img.right {
@@ -128,5 +140,183 @@
 	}
 	.banner-wrap .top-icons {
 		top: 28px;
+		width: 530px;
+	}
+	.second.page h1 {
+		font-size: 40px;
+		margin-bottom: 40px;
+	}
+	.second.page ul li::after {
+    	width: 18px;
+    	height: 18px;
+	}
+	.second.page ul li::after {
+    	width: 18px;
+    	height: 18px;
+    	top: 6px;
+	}
+	.second.page ul {
+		font-size: 20px;
+	}
+	.second.page ul li {
+		padding-left: 40px;
+	}
+	.footer ul li a {
+		font-size: 25px;
+	}
+	.footer ul li {
+		margin: 0 20px;
+	}
+	.footer span.copyright {
+		margin-top: 30px;
+	}
+	.footer {
+		height: 270px;
 	}
 }
+@media screen and (max-width: 1300px) {
+	.second.page .inner {
+		width: 930px;
+	}
+	.second.page img.shape-left {
+    	top: -40px;
+    	left: -162px;
+	}
+	.second.page .anim-wrap {
+    	right: 110px;
+   	}
+   	.first.page img.shape-right {
+    	right: -90px;
+	}
+	.first.page img.shape-left {
+    	left: -30px;
+	}
+}
+/* iPad: Start */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+  .logo {
+    padding-top: 200px;
+  }
+  .first.page img.shape-left {
+      left: -140px;
+      height: 60%;
+  }
+  .first.page img.shape-right {
+      top: -52px;
+      right: -160px;
+      height: 60%;
+      width: 270px;
+  }
+  .banner-wrap .top-icons {
+      transform: translateX(-50%) scale(0.58);
+      top: -28px;
+  }
+  .banner-wrap .cell p.small {
+    font-size: 18px;
+  }
+  .banner-wrap .cell p.big {
+    font-size: 20px;
+  }
+  .banner-wrap .cell p.last {
+    font-size: 16px;
+    margin-top: 30px;
+  }
+  .banner-wrap .cell {
+    height: 315px;
+    -webkit-border-radius: 0;
+            border-radius: 0;
+  }
+  .banner-wrap .cell .inner {
+    width: 460px;
+  }
+  .banner-wrap {
+      padding: 40px 0;
+      bottom: -40px;
+      width: 100%;
+    }
+    .banner-wrap img.left {
+      left: -60px;
+      top: -47px;
+      width: 230px;
+  }
+  .banner-wrap img.right {
+      right: -65px;
+      top: -46px;
+      width: 220px;
+  }
+  .second.page .inner {
+    width: 626px;
+      padding-right: 80px;
+  }
+  .second.page h1 {
+    text-align: center;
+    font-size: 45px;
+  }
+  .second.page ul {
+    font-size: 20px;
+  }
+  .second.page ul li {
+      padding: 0 0 0 40px;
+      margin: 0 0 31px 0;
+  }
+  .second.page ul li::after {
+      width: 20px;
+      height: 20px;
+      top: 4px;
+  }
+  .second.page .anim-wrap {
+    right: 40px;
+  }
+  .footer .ft-logo {
+    margin-bottom: 30px;
+  }
+  .footer span.copyright {
+    margin-top: 30px;
+  }
+  .footer {
+    height: 280px;
+  }
+  .second.page img.shape-left {
+      top: -380px;
+      left: 197px;
+      height: auto;
+      transform: rotate(90deg);
+      width: 47%;
+  }
+  .second.page img.shape-right {
+      top: auto;
+      right: 208px;
+      height: auto;
+      width: 360px;
+      bottom: -410px;
+      transform: rotate(90deg);
+  }
+}
+@media all and (device-width: 1024px) and (device-height: 768px) and (orientation:landscape) {
+  .second.page .inner {
+    width: 740px;
+  }
+  .second.page img.shape-left {
+      left: -232px;
+  }
+  .second.page ul li::after {
+      width: 20px;
+      height: 20px;
+  }
+  .second.page ul {
+      font-size: 22px;
+  }
+  .second.page ul li {
+    padding-left: 45px;
+  }
+  .second.page ul li::after {
+    top: 5px;
+  }
+  .second.page .anim-wrap {
+    right: 95px;
+  }
+  .second.page h1 {
+      font-size: 40px;
+    }
+}
+/* iPad: End */
