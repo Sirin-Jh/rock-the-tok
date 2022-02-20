@@ -1,1 +1,132 @@
-@media screen and (max-width: 1400px) {}
+@media screen and (max-height: 850px) {
+	.logo {
+		padding-top: 30px;
+	}
+	.logo a {
+		width: 230px;
+	}
+	.banner-wrap {
+		padding-top: 50px;
+		padding-bottom: 50px;	
+		bottom: -50px;
+		width: 1080px;
+	}
+	.banner-wrap .cell {
+		height: 404px;
+	}
+	.banner-wrap .cell p.small {
+		font-size: 21px;
+	}
+	.banner-wrap .cell p.big {
+		font-size: 24px;
+	}
+	.banner-wrap .cell p.last {
+		margin-top: 30px;
+		font-size: 18px;
+	}
+	.banner-wrap .top-icons {
+		width: 760px;
+	}
+	.banner-wrap .top-icons .image-1 {
+		width: 88px;
+	}
+	.banner-wrap .top-icons .image-2 {
+		width: 77px;
+	}
+	.banner-wrap .top-icons .image-3 {
+		width: 134px;
+	}
+	.banner-wrap .top-icons .image-4 {
+		width: 132px;
+	}
+	.banner-wrap .top-icons .image-5 {
+		width: 64px;
+	}
+	.banner-wrap img.left {
+		width: 280px;
+	}
+	.banner-wrap img.right {
+		width: 270px;
+	}
+	.second.page h1 {
+		font-size: 50px;
+	}
+	.second.page ul {
+		font-size: 24px;
+	}
+	.second.page ul li::after {
+    	width: 28px;
+    	height: 28px;
+    }
+    .second.page ul li::after {
+    	top: 1px;
+    }
+    .second.page ul li {
+    	padding-left: 55px;
+    }
+    .footer ul li a {
+    	font-size: 34px;
+    }
+    .footer .ft-logo {
+    	margin-bottom: 40px;
+    }
+    .footer span.copyright {
+    	margin-top: 40px;
+    }
+    .footer {
+    	height: 310px;
+    }
+    .banner-wrap .cell .inner {
+    	width: 580px;
+    }
+}
+@media screen and (max-height: 670px) {
+	.banner-wrap .cell p.small {
+		font-size: 18px;
+	}
+	.banner-wrap .cell p.big {
+		font-size: 20px;
+	}
+	.banner-wrap .cell p.last {
+		font-size: 16px;
+	}
+	.banner-wrap .cell {
+		height: 300px;
+	}
+	.banner-wrap .round {
+		width: 530px;
+	}
+	.banner-wrap .top-icons .image-1 {
+		width: 48px;
+	}
+	.banner-wrap .top-icons .image-2 {
+		width: 37px;
+	}
+	.banner-wrap .top-icons .image-3 {
+		width: 104px;
+	}
+	.banner-wrap .top-icons .image-4 {
+		width: 92px;
+	}
+	.banner-wrap .top-icons .image-5 {
+		width: 44px;
+	}
+	.banner-wrap {
+		width: 760px;
+	}
+	.banner-wrap img.left {
+    	width: 215px;
+	}
+	.banner-wrap img.right {
+		width: 205px;
+	}
+	.banner-wrap .cell .inner {
+		width: 510px;	
+	}
+	.logo a {
+    	width: 180px;
+	}
+	.banner-wrap .top-icons {
+		top: 28px;
+	}
+}

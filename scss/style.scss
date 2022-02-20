@@ -56,6 +56,52 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
+// Icons : Start
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?dwgu03');
+    src: url('../fonts/icomoon.eot?dwgu03#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?dwgu03') format('truetype'), url('../fonts/icomoon.woff?dwgu03') format('woff'), url('../fonts/icomoon.svg?dwgu03#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter:before {
+    content: "\e900";
+    color: #fff;
+}
+
+.icon-insta:before {
+    content: "\e901";
+    color: #fff;
+}
+
+.icon-whatsapp:before {
+    content: "\e902";
+    color: #fff;
+}
+
+.icon-facebook:before {
+    content: "\e903";
+    color: #fff;
+}
+// Icons : End
+
 .pages {
     height: 100%;
     width: 100%;
@@ -239,4 +285,188 @@ input::-webkit-inner-spin-button {
             height: 100%;
         }
     } 
+}
+.second.page {
+    display: flex;
+    -webkit-align-items: center;
+            align-items: center;
+    .inner {
+        width: 1170px;
+        margin: 0 auto;
+        .cell-wrap {
+            display: flex;
+            -webkit-flex-direction: row;
+                -ms-flex-direction: row;
+                   flex-direction: row;
+            width: 100%;
+            .cell {
+                width: 50%;
+                padding-right: 25px;
+                &:last-child {
+                    padding-left: 25px;
+                }
+            }
+        }  
+    }
+    h1 {
+        font-size: 60px;
+        color: #00F7EF;
+        margin: 0 0 60px 0;
+        font-weight: 400;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        font-size: 26px;
+        color: #fff;
+        list-style: none;
+        // display: grid;
+        // grid-template-columns: repeat(2, 1fr);
+        li {
+            padding: 0 0 0 65px;
+            position: relative;
+            margin: 0 0 30px 0;
+            &::after {
+                width: 34px;
+                height: 34px;
+                -webkit-border-radius: 50%;
+                        border-radius: 50%;
+                background: #FFF;
+                content: "";
+                position: absolute;
+                left: 0;
+                top: -2px;
+            }
+        }
+    }
+    span {
+        font-size: 20px;
+        color: #00F7EF;
+        display: block;
+        padding-left: calc(50% + 65px);
+        top: -57px;
+        position: relative;
+    }
+    img {
+        &.shape-right {
+            position: absolute;
+            top: 0;
+            right: -14%;
+            height: 100%;
+        }
+        &.shape-left {
+            position: absolute;
+            top: 40px;
+            left: -10.5%;
+            height: 100%;
+        }
+    } 
+    .anim-wrap {
+        width: 44px;
+        // height: 200px;
+        position: absolute;
+        top: 50%;
+        right: 200px;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+           -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+             -o-transform: translateY(-50%);
+                transform: translateY(-50%);
+        .scroll-rocktock {
+            margin-bottom: 60px;
+        }
+        .cell {
+            width: 100%;
+            display: flex;
+            -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-align-items: center;
+                    align-items: center;
+            .blue-dot {
+                position: relative;
+                margin-top: 10px;
+                -webkit-transition: 1s;
+                   -moz-transition: 1s;
+                    -ms-transition: 1s;
+                     -o-transition: 1s;
+                        transition: 1s;
+            }
+            .chain {
+                position: relative;
+                margin-top: 35px;
+                -webkit-transition: 1s;
+                   -moz-transition: 1s;
+                    -ms-transition: 1s;
+                     -o-transition: 1s;
+                        transition: 1s;
+            }
+        }
+    }
+    &.active {
+        .chain {
+            margin-top: -131px !important;
+        }
+        .blue-dot {
+            margin-top: 84px !important;
+        }
+    }
+}
+.footer {
+    background-color: #000;
+    height: 360px;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-align-items: center;
+            align-items: center;
+    .ft-logo {
+        display: table;
+        margin: 0 0 50px 0;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            float: left;
+            margin: 0 30px;
+            a {
+                display: block;
+                font-size: 40px;
+                text-decoration: none;
+                .icon-facebook:hover {
+                    &:before {
+                       color: #1877f2;    
+                    }
+                }
+                .icon-whatsapp:hover {
+                    &:before {
+                       color: #25d366;    
+                    }
+                }
+                .icon-insta:hover {
+                    &:before {
+                       color: #e1306c;    
+                    }
+                }
+                .icon-twitter:hover {
+                    &:before {
+                       color: #1da1f2;    
+                    }
+                }
+            }
+        }
+    }
+    span {
+        &.copyright {
+            font-size: 14px;
+            color: #FFF;
+            display: block;
+            margin: 50px 0 0 0;
+        }
+    }
 }
