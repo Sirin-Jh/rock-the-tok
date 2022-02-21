@@ -192,6 +192,11 @@
     	left: -30px;
 	}
 }
+@media screen and (max-width: 1400px) {
+	.second.page .anim-wrap {
+		right: 8%;
+	}
+}
 /* iPad: Start */
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
   .logo {

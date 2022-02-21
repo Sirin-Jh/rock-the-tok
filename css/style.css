@@ -303,7 +303,7 @@ input::-webkit-inner-spin-button {
     width: 44px;
     position: absolute;
     top: 50%;
-    right: 200px;
+    right: 10.5%;
     text-align: center;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
